@@ -1,0 +1,58 @@
+.caja-margin,
+.caja-border,
+.caja-padding,
+.caja-content {
+    padding: 2em;
+    font-weight: bold;
+}
+
+.caja-margin {
+    border: 2px dashed #b5520f;
+    border-radius: 1em;
+
+    background-color: #fce68a;
+    text-align: center;
+
+    & p {
+        color: #b5520f;
+    }
+}
+
+.caja-border {
+    border: 8px solid #13813b;
+    background-color: #baf7cf;
+
+    & p {
+        color: #13813b;
+    }
+}
+
+.caja-padding {
+    background-color: #bedbfe;
+
+    & p {
+        color: #1b4dd1;
+    }
+}
+
+.caja-content {
+    border: 1px solid;
+    background-color: #fefffe;
+    border-radius: 0.5em;
+
+    & p {
+        color: black;
+    }
+    & span {
+        font-weight: lighter;
+    }
+}
+
+.caja-exterior {
+    background-color: rgba(211, 211, 211, 0.363);
+    border-radius: 10px;
+}
+figcaption {
+    text-align: center;
+    color: rgb(116, 114, 114);
+}
