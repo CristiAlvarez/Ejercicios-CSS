@@ -16,15 +16,6 @@
     --degradado-v2: linear-gradient(315deg, #ffecb370 0%, #ff704350 50%, #3e000010 100%);
 }
 
-html,
-body,
-header,
-h1,
-nav {
-    margin: 0;
-    padding: 0;
-}
-
 main {
     margin: 0 10%;
 }

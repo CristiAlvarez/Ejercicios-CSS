@@ -1,0 +1,60 @@
+:root {
+    --ca-bg-destacada: url("https://picsum.photos/600/400");
+    --ca-h-header: 25rem;
+    --ca-h1-color: white;
+    --ca-h1-bgcolor: #00000050;
+
+    --ca-main-padding: 5rem 15%;
+    --ca-body-h: 100vh;
+    --ca-logo: url ("");
+}
+
+body {
+    height: var(--ca-body-h);
+
+    &::before {
+    }
+}
+
+header.destacada {
+    position: relative;
+    height: var(--ca-h-header);
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+
+        background-image: var(--ca-bg-destacada);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    & h1 {
+        position: relative;
+        top: 40%;
+        width: 100%;
+    }
+}
+
+header.destacada {
+    & h1 {
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+        color: var(--ca-h1-color);
+        background-color: var(--ca-h1-bgcolor);
+    }
+}
+
+main {
+    padding: var(--ca-main-padding);
+}
+
+/* 
+Se colocará el logotipo como marca de agua a 5rem del borde inferior y derecho.
+
+La marca de agua tendrá una opacidad del 25%
+*/
